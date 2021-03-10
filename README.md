@@ -7,3 +7,5 @@ Add readability main page text and text metrics.
 - Symbols
 - Minutes to read
 - Main page text
+
+Thanks to [lucmichalski](https://github.com/lucmichalski).

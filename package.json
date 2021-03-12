@@ -1,7 +1,7 @@
 {
   "name": "site-audit-seo-readability",
   "description": "Plugin for site-audit-seo, add readability main page text and text metrics",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "site-audit-seo": {
     "plugins": {
       "readability": {
@@ -12,63 +12,81 @@
             "name": "readability_length",
             "comment": "Читать, символов",
             "comment_en": "Reading, symbols",
-            "groups": ["readability"],
+            "groups": [
+              "readability"
+            ],
             "type": "integer"
           },
           {
             "name": "readability_words",
             "comment": "Слов",
             "comment_en": "Words",
-            "groups": ["readability"],
+            "groups": [
+              "readability"
+            ],
             "type": "integer"
           },
           {
             "name": "readability_minutes",
             "comment": "Читать, минут",
             "comment_en": "Reading, minutes",
-            "groups": ["readability"],
+            "groups": [
+              "readability"
+            ],
             "type": "integer"
           },
           {
             "name": "readability_text",
             "comment": "Текст страницы",
             "comment_en": "Page text",
-            "groups": ["readability"],
+            "groups": [
+              "readability"
+            ],
             "type": "string"
           },
           {
             "name": "readability_links",
             "comment": "Ссылки в тексте (все)",
             "comment_en": "Links in text (all)",
-            "groups": ["readability"],
+            "groups": [
+              "readability"
+            ],
             "type": "integer"
           },
           {
             "name": "readability_links_inner",
             "comment": "Ссылки в тексте (внутренние)",
             "comment_en": "Links in text (inner)",
-            "groups": ["readability"],
+            "groups": [
+              "readability"
+            ],
             "type": "integer"
           },
           {
             "name": "readability_links_outer",
             "comment": "Ссылки в тексте (внешние)",
             "comment_en": "Links in text (outer)",
-            "groups": ["readability"],
+            "groups": [
+              "readability"
+            ],
             "type": "integer"
           },
           {
             "name": "links_anchors",
             "comment": "Ссылки в тексте (якоря)",
             "comment_en": "Links in text (anchors)",
-            "groups": ["readability"],
+            "groups": [
+              "readability"
+            ],
             "type": "integer"
           },
           {
             "name": "readability_images",
             "comment": "Картинки в тексте",
             "comment_en": "Images in text",
-            "groups": ["readability"],
+            "groups": [
+              "readability"
+            ],
             "type": "integer"
           }
         ]

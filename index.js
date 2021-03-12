@@ -32,10 +32,37 @@ function afterRequest(result, options) {
       result.readability_text = article.content;
       result.readability_excerpt = article.excerpt;
     }
+
+    const info = getContentInfo(article.content, result);
+    // console.log(`info ${result.response.url}: `, info);
+    for (let name in info) {
+      result[`readability_${name}`] = info[name];
+    }
   }
 
   // console.log('result: ', result);
   return result;
+}
+
+// extract info from readability html
+function getContentInfo(html, result) {
+  const dom = new JSDOM(html, {
+    url: result.response.url,
+  });
+  const doc = dom.window.document;
+
+  let domainParts = dom.window.location.host.split('.');
+  const domain2level = domainParts.slice(domainParts.length - 2).join('.');
+
+  const info = {
+    links: doc.querySelectorAll('a[href]:not([href^="javascript"]):not([href^="#"])').length,
+    links_inner: doc.querySelectorAll(`a[href^="/"], a[href*="${domain2level}"]`).length,
+    links_outer: doc.querySelectorAll(`a[href^="http"]:not([href^="javascript"]):not([href^="#"]):not([href^="/"]):not([href*="${domain2level}"])`).length,
+    links_anchors: doc.querySelectorAll(`a[href^="#"]`).length,
+    images: doc.querySelectorAll('img').length,
+  };
+
+  return info;
 }
 
 module.exports = afterRequest;

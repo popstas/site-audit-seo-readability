@@ -15,7 +15,11 @@
             "groups": [
               "readability"
             ],
-            "type": "integer"
+            "type": "integer",
+            "stat": {
+              "type": "ranges",
+              "ranges": ["< 500", "500-999", "1000-1999", "2000-4999", "5000-10000", "> 10000"]
+            }
           },
           {
             "name": "readability_words",
@@ -60,7 +64,11 @@
             "groups": [
               "readability"
             ],
-            "type": "integer"
+            "type": "integer",
+            "stat": {
+              "type": "ranges",
+              "ranges": ["0", "1-5", ">5"]
+            }
           },
           {
             "name": "readability_links_outer",
@@ -69,7 +77,11 @@
             "groups": [
               "readability"
             ],
-            "type": "integer"
+            "type": "integer",
+            "stat": {
+              "type": "ranges",
+              "ranges": ["0", "1-5", ">5"]
+            }
           },
           {
             "name": "links_anchors",

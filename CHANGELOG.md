@@ -1,3 +1,12 @@
+## [1.1.1](https://github.com/popstas/site-audit-seo-readability/compare/v1.1.0...v1.1.1) (2021-03-13)
+
+
+### Features
+
+* add stat ranges, for report "filtered stats" panel ([21592c9](https://github.com/popstas/site-audit-seo-readability/commit/21592c921d60523692cbd8140b9969e515557feb))
+
+
+
 # [1.1.0](https://github.com/popstas/site-audit-seo-readability/compare/v1.0.0...v1.1.0) (2021-03-12)
 
 

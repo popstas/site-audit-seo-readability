@@ -54,12 +54,21 @@ function getContentInfo(html, result) {
   let domainParts = dom.window.location.host.split('.');
   const domain2level = domainParts.slice(domainParts.length - 2).join('.');
 
+  // count png images
+  let imgPng = [];
+  doc.querySelectorAll('img').forEach(img => {
+    const src = img.getAttribute('src');
+    if (src.match(/\.png$/)) imgPng.push(src);
+  });
+
   const info = {
     links: doc.querySelectorAll('a[href]:not([href^="javascript"]):not([href^="#"])').length,
     links_inner: doc.querySelectorAll(`a[href^="/"], a[href*="${domain2level}"]`).length,
     links_outer: doc.querySelectorAll(`a[href^="http"]:not([href^="javascript"]):not([href^="#"]):not([href^="/"]):not([href*="${domain2level}"])`).length,
     links_anchors: doc.querySelectorAll(`a[href^="#"]`).length,
     images: doc.querySelectorAll('img').length,
+    images_png: imgPng.length,
+    images_png_links: imgPng.join('\n'),
   };
 
   return info;

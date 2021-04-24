@@ -115,6 +115,24 @@
               "readability"
             ],
             "type": "integer"
+          },
+          {
+            "name": "readability_images_png",
+            "comment": "PNG картинки в тексте",
+            "comment_en": "PNG images in text",
+            "groups": [
+              "readability"
+            ],
+            "type": "integer"
+          },
+          {
+            "name": "readability_images_png_links",
+            "comment": "PNG картинки в тексте, ссылки",
+            "comment_en": "PNG images in text, links",
+            "groups": [
+              "readability"
+            ],
+            "type": "string"
           }
         ]
       }

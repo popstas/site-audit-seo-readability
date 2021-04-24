@@ -1,9 +1,18 @@
+# [1.2.0](https://github.com/popstas/site-audit-seo-readability/compare/v1.1.1...v1.2.0) (2021-04-24)
+
+
+### Features
+
+* png images in main content ([6cbddd0](https://github.com/popstas/site-audit-seo-readability/commit/6cbddd0))
+
+
+
 ## [1.1.1](https://github.com/popstas/site-audit-seo-readability/compare/v1.1.0...v1.1.1) (2021-03-13)
 
 
 ### Features
 
-* add stat ranges, for report "filtered stats" panel ([21592c9](https://github.com/popstas/site-audit-seo-readability/commit/21592c921d60523692cbd8140b9969e515557feb))
+* add stat ranges, for report "filtered stats" panel ([21592c9](https://github.com/popstas/site-audit-seo-readability/commit/21592c9))
 
 
 
@@ -12,16 +21,16 @@
 
 ### Features
 
-* extend page info: links and images in readability content ([42a9d8b](https://github.com/popstas/site-audit-seo-readability/commit/42a9d8be258e446cd56130c23d43f77a43f4437d))
+* extend page info: links and images in readability content ([42a9d8b](https://github.com/popstas/site-audit-seo-readability/commit/42a9d8b))
 
 
 
-# [1.0.0](https://github.com/popstas/site-audit-seo-readability/compare/ba3df0fc0a64ab1c928f078e530410790cf7f8fc...v1.0.0) (2021-03-10)
+# [1.0.0](https://github.com/popstas/site-audit-seo-readability/compare/ba3df0f...v1.0.0) (2021-03-10)
 
 
 ### Features
 
-* Words, Symbols, Minutes to read, Main page text ([ba3df0f](https://github.com/popstas/site-audit-seo-readability/commit/ba3df0fc0a64ab1c928f078e530410790cf7f8fc))
+* Words, Symbols, Minutes to read, Main page text ([ba3df0f](https://github.com/popstas/site-audit-seo-readability/commit/ba3df0f))
 
 
 

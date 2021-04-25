@@ -58,7 +58,7 @@ function getContentInfo(html, result) {
   let imgPng = [];
   doc.querySelectorAll('img').forEach(img => {
     const src = img.getAttribute('src');
-    if (src.match(/\.png$/)) imgPng.push(src);
+    if (src && src.match(/\.png$/)) imgPng.push(src);
   });
 
   const info = {

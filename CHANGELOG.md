@@ -1,3 +1,12 @@
+## [1.2.1](https://github.com/popstas/site-audit-seo-readability/compare/v1.2.0...v1.2.1) (2021-04-25)
+
+
+### Bug Fixes
+
+* img without src caused exception ([50db6b4](https://github.com/popstas/site-audit-seo-readability/commit/50db6b4))
+
+
+
 # [1.2.0](https://github.com/popstas/site-audit-seo-readability/compare/v1.1.1...v1.2.0) (2021-04-24)
 
 

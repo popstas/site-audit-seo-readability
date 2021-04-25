@@ -1,7 +1,7 @@
 {
   "name": "site-audit-seo-readability",
   "description": "Plugin for site-audit-seo, add readability main page text and text metrics",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "site-audit-seo": {
     "plugins": {
       "readability": {
